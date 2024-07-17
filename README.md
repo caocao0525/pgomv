@@ -82,7 +82,6 @@ plt.show()
 To run tests, use pytest:
 
 ```sh
-Copy code
 pytest tests
 ```
 
