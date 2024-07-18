@@ -25,7 +25,7 @@ We suggest using `mamba` for managing your virtual environment due to its speed 
 
     ```sh
     git clone https://github.com/caocao0525/pgomv.git
-    cd intraflow
+    cd pgomv
     ```
 
 3. **Create and activate a mamba environment**:
