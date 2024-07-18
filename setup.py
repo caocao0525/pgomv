@@ -9,13 +9,13 @@ setup(
         'opencv-python',
         'matplotlib',
     ],
-    author='Your Name',
-    author_email='your.email@example.com',
-    description='A package for image processing including polar conversion and optical flow.',
-    url='https://github.com/yourusername/my_image_processing_package',  # Replace with your GitHub URL
+    author='Seohyun Lee',
+    author_email='seohyun.lee@iii.u-tokyo.ac.jp',
+    description='A package for intracellular movement pattern of pg OMV',
+    url='https://github.com/caocao0525/pgomv',  # Replace with your GitHub URL
     classifiers=[
         'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
+        'License :: OSI Approved :: Apache 2.0 License',
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.6',
