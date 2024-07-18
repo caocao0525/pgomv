@@ -1,5 +1,5 @@
 import unittest
-from my_image_processing_package import preprocess_image, detect_vesicles, apply_dbscan, process_image_stack
+from intraflow import preprocess_image, detect_vesicles, apply_dbscan, process_image_stack
 
 class TestPreprocessing(unittest.TestCase):
 
