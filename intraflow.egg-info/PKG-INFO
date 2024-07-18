@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: intraflow
+Version: 0.1
+Summary: A package for intracellular movement pattern of pg OMV
+Home-page: https://github.com/caocao0525/pgomv
+Author: Seohyun Lee
+Author-email: seohyun.lee@iii.u-tokyo.ac.jp
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache 2.0 License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: matplotlib
