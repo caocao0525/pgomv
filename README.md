@@ -24,14 +24,14 @@ We suggest using `mamba` for managing your virtual environment due to its speed 
 2. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/my_image_processing_package.git
-    cd my_image_processing_package
+    git clone https://github.com/caocao0525/pgomv.git
+    cd intraflow
     ```
 
 3. **Create and activate a mamba environment**:
     ```sh
     mamba env create -f environment.yml
-    mamba activate intraflow_env
+    mamba activate intraflow
     ```
 
 4. Install the package:
@@ -46,7 +46,7 @@ Here is an example of how to use the package:
 
 ```python
 import cv2
-import my_image_processing_package as mip
+import intraflow as ifw
 import matplotlib.pyplot as plt
 
 # Load an image
@@ -56,19 +56,19 @@ image = cv2.imread('path_to_image.jpg', cv2.IMREAD_GRAYSCALE)
 initial_center = (image.shape[1] // 2, image.shape[0] // 2)
 
 # Convert image to polar coordinates
-polar_image = mip.cartesian_to_polar(image, initial_center)
+polar_image = ifw.cartesian_to_polar(image, initial_center)
 
 # Estimate center for a sequence of images
-new_center = mip.estimate_center(image, initial_center)
+new_center = ifw.estimate_center(image, initial_center)
 
 # Compute optical flow between two images
-flow = mip.compute_optical_flow(image, image)
+flow = ifw.compute_optical_flow(image, image)
 
 # Draw optical flow on an image
-flow_image = mip.draw_optical_flow(flow, image)
+flow_image = ifw.draw_optical_flow(flow, image)
 
 # Highlight high intensity spots
-highlighted_image = mip.highlight_high_intensity(image, threshold=150)
+highlighted_image = ifw.highlight_high_intensity(image, threshold=150)
 
 # Display the results
 plt.figure(figsize=(10, 5))
