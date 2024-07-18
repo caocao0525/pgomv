@@ -1,4 +1,4 @@
-# Cell-wise Movement Analysis and Visualization for pgOMVs
+# Cell-wise Intracellular Movement Analysis and Visualization for pgOMVs
 
 A Python package for image processing, including Cartesian to Polar conversion, optical flow computation, and highlighting high-intensity spots in images.
 
@@ -8,6 +8,8 @@ A Python package for image processing, including Cartesian to Polar conversion, 
 - **Optical Flow Computation**: Compute and visualize the optical flow between two images.
 - **Center Estimation**: Estimate the center of an image based on intensity.
 - **Highlight High-Intensity Spots**: Highlight high-intensity spots in images using a diverging colormap.
+
+## Citation
 
 ## Installation
 
