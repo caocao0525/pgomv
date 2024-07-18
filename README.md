@@ -31,7 +31,7 @@ We suggest using `mamba` for managing your virtual environment due to its speed 
 3. **Create and activate a mamba environment**:
     ```sh
     mamba env create -f environment.yml
-    mamba activate intraflow
+    conda activate intraflow
     ```
 
 4. Install the package:
