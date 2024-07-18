@@ -1,4 +1,4 @@
-# Movement Tracking and Visualization for pgOMV
+# Cell-wise Movement Analysis and Visualization for pgOMVs
 
 A Python package for image processing, including Cartesian to Polar conversion, optical flow computation, and highlighting high-intensity spots in images.
 
