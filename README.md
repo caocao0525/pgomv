@@ -13,21 +13,28 @@ A Python package for image processing, including Cartesian to Polar conversion, 
 
 ## Installation
 
-1. Clone the repository:
+We suggest using `mamba` for managing your virtual environment due to its speed and efficiency. If you don't have `mamba` installed, you can install it using `conda` or by following the instructions on the [Mamba GitHub page](https://github.com/mamba-org/mamba).
+
+1. **Install Mamba**:
+
+    If you have `conda` installed:
+    ```sh
+    conda install mamba -n base -c conda-forge
+    ```
+2. Clone the repository:
 
     ```sh
     git clone https://github.com/yourusername/my_image_processing_package.git
     cd my_image_processing_package
     ```
 
-2. Create and activate a conda environment:
-
+3. **Create and activate a mamba environment**:
     ```sh
-    conda env create -f environment.yml
-    conda activate my_image_processing_env
+    mamba env create -f environment.yml
+    mamba activate intraflow_env
     ```
 
-3. Install the package:
+4. Install the package:
 
     ```sh
     pip install -e .
