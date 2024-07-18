@@ -1,5 +1,5 @@
 import unittest
-from my_image_processing_package import cartesian_to_polar, compute_optical_flow, draw_optical_flow, estimate_center, highlight_high_intensity
+from intraflow import cartesian_to_polar, compute_optical_flow, draw_optical_flow, estimate_center, highlight_high_intensity
 
 class TestImageProcessing(unittest.TestCase):
     def test_cartesian_to_polar(self):
