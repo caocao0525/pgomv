@@ -1,13 +1,18 @@
-# Intracellular Movement Analysis and Visualization for pgOMVs
+# Intraflow: Intracellular Movement Analysis and Visualization for pgOMVs
 
-A Python package for image processing, including Cartesian to Polar conversion, optical flow computation, and highlighting high-intensity spots in images.
+The Intraflow Image Processing Algorithm is a comprehensive workflow designed for the analysis of intracellular vesicle movements. This algorithm encompasses several key steps:
 
-## Features
+1. **Preprocessing and DBSCAN Clustering**
+   * Enhances image quality and detects potential vesicle locations using DBSCAN clustering, a machine learning approach that effectively handles sparse data by identifying clusters of points and distinguishing noise.
+  
+2. **Polar Coordinate Conversion**
+   * Converts the Cartesian coordinates of the image to polar coordinates to rearrange the images according to the cellular structure, with the cell center serving as the origin. This transformation facilitates specific types of image analysis that are centered around the cell's internal structure.
 
-- **Cartesian to Polar Conversion**: Convert images from Cartesian coordinates to polar coordinates.
-- **Optical Flow Computation**: Compute and visualize the optical flow between two images.
-- **Center Estimation**: Estimate the center of an image based on intensity.
-- **Highlight High-Intensity Spots**: Highlight high-intensity spots in images using a diverging colormap.
+3. **Optical Flow Computation**
+   * Computes and visualizes the optical flow between successive images to track the movement of vesicles over time.
+
+4. **Visualization with Diverging Colormap**
+   * Highlights high-intensity spots and visualizes the optical flow using a diverging colormap to distinguish the direction and magnitude of vesicle movements.
 
 ## Citation
 
