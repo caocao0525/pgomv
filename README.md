@@ -1,20 +1,21 @@
-# Intraflow: Intracellular Movement Analysis and Visualization for pgOMVs
+# Intraflow: Intracellular Movement Analysis and Visualization for P. gingivalis OMVs
 
-The Intraflow Image Processing Algorithm is a comprehensive workflow designed for the analysis of intracellular vesicle movements. This algorithm encompasses several key steps:
+The Intraflow Image Processing Algorithm is a comprehensive workflow designed to analyze intracellular vesicle movements. This algorithm encompasses several key steps:
 
-1. **Preprocessing and DBSCAN Clustering**
-   * Enhances image quality and detects potential vesicle locations using DBSCAN clustering, a machine learning approach that effectively handles sparse data by identifying clusters of points and distinguishing noise.
+1. **Preprocessing using Fourier Transform and DBSCAN**
+   * Enhances image quality via Fourier Transform filter and detects potential vesicle locations using DBSCAN, a machine-learning approach that effectively handles sparse data by identifying clusters of points and distinguishing noise.
   
 2. **Polar Coordinate Conversion**
-   * Converts the Cartesian coordinates of the image to polar coordinates to rearrange the images according to the cellular structure, with the cell center serving as the origin. This transformation facilitates specific types of image analysis that are centered around the cell's internal structure.
+   * Converts the Cartesian coordinates of the image to polar coordinates to rearrange the images according to the cellular structure, with the cell center serving as the origin. This transformation facilitates specific image analysis types centered around the cell's internal structure.
 
-3. **Optical Flow Computation**
-   * Computes and visualizes the optical flow between successive images to track the movement of vesicles over time.
+3. **Inward/Outward Movement Determination**
+   * Calculates the angles between two vectors at the vesicle's position: one vector points towards the cell center, and the other points to the vesicle's position in the subsequent time stamp. This calculation helps determine the direction of vesicle movement relative to the cell center.
 
 4. **Visualization with Diverging Colormap**
-   * Highlights high-intensity spots and visualizes the optical flow using a diverging colormap to distinguish the direction and magnitude of vesicle movements.
+   * Inward movements are colored red, while outward movements are colored blue.
 
 ## Citation
+Under review: Conference name
 
 ## Installation
 
