@@ -51,13 +51,15 @@ We suggest using `mamba` for managing your virtual environment due to its speed 
 Here is an example of how to use the package:
 
 ```python
-import cv2
 import intraflow as ifw
-import matplotlib.pyplot as plt
 
-# Load an image
-image = cv2.imread('path_to_image.jpg', cv2.IMREAD_GRAYSCALE)
+# Process and save the initial image stack (Gaussian filter, Normalization, Inverse Fourier Transform)
+process_and_save_tiff(input_file_path='path/to/input/image/stack', enhancement_method='scaling', alpha=10, beta=10, output_file_path='path/to/output/file/name, colormap='hot')
 
+# alpha: Scaling factor for adjusting contrast. Higher values increase contrast.
+# beta: Offset value for adjusting brightness. Higher values increase brightness.
+```
+```python
 # Initial center (user designated or calculated)
 initial_center = (image.shape[1] // 2, image.shape[0] // 2)
 
