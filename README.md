@@ -55,19 +55,21 @@ import intraflow as ifw
 
 # Process and save the initial image stack (Gaussian filter, Normalization, Inverse Fourier Transform)
 ifw.process_and_save_tiff(input_file_path='path/to/input/image/stack',
-enhancement_method='scaling',
-alpha=10,  # Scaling factor for adjusting contrast. Higher values increase contrast.
-beta=10,  # Offset value for adjusting brightness. Higher values increase brightness.
-output_file_path='path/to/output/file/name, colormap='hot')
+    enhancement_method='scaling',
+    alpha=10,  # Scaling factor for adjusting contrast. Higher values increase contrast.
+    beta=10,  # Offset value for adjusting brightness. Higher values increase brightness.
+    output_file_path='path/to/output/file/name,
+    colormap='hot'
+)
 
 # Detect the vesicle locations using DBSCAN and convert the image to polar coordinates
 ifw.detect_vesicles_and_convert_to_polar(file_path='path/to/your/enhanced/image/stack/from/above',
-dbscan_output_path='path/to/output/for/vesicle/detected',
-polar_output_path='path/to/output/for/polar/converted',
-eps=2,  # Adjust based on expected vesicle size
-min_samples=2,  # Adjust based on expected density of vesicle clusters
-threshold_value=128, # Adjust based on intensity threshold for vesicle detection
-line_thickness=5 # Thickness of the line used to label the detected vesicles
+    dbscan_output_path='path/to/output/for/vesicle/detected',
+    polar_output_path='path/to/output/for/polar/converted',
+    eps=2,  # Adjust based on expected vesicle size
+    min_samples=2,  # Adjust based on expected density of vesicle clusters
+    threshold_value=128, # Adjust based on intensity threshold for vesicle detection
+    line_thickness=5 # Thickness of the line used to label the detected vesicles
 )
 
 ```
