@@ -58,7 +58,7 @@ ifw.process_and_save_tiff(input_file_path='path/to/input/image/stack',
     enhancement_method='scaling',
     alpha=10,  # Scaling factor for adjusting contrast. Higher values increase contrast.
     beta=10,  # Offset value for adjusting brightness. Higher values increase brightness.
-    output_file_path='path/to/output/file/name,
+    output_file_path='path/to/output/file/name',
     colormap='hot'
 )
 
