@@ -54,43 +54,21 @@ Here is an example of how to use the package:
 import intraflow as ifw
 
 # Process and save the initial image stack (Gaussian filter, Normalization, Inverse Fourier Transform)
-process_and_save_tiff(input_file_path='path/to/input/image/stack', enhancement_method='scaling', alpha=10, beta=10, output_file_path='path/to/output/file/name, colormap='hot')
+ifw.process_and_save_tiff(input_file_path='path/to/input/image/stack',
+enhancement_method='scaling',
+alpha=10,  # Scaling factor for adjusting contrast. Higher values increase contrast.
+beta=10,  # Offset value for adjusting brightness. Higher values increase brightness.
+output_file_path='path/to/output/file/name, colormap='hot')
 
-# alpha: Scaling factor for adjusting contrast. Higher values increase contrast.
-# beta: Offset value for adjusting brightness. Higher values increase brightness.
-```
-```python
-# Initial center (user designated or calculated)
-initial_center = (image.shape[1] // 2, image.shape[0] // 2)
-
-# Convert image to polar coordinates
-polar_image = ifw.cartesian_to_polar(image, initial_center)
-
-# Estimate center for a sequence of images
-new_center = ifw.estimate_center(image, initial_center)
-
-# Compute optical flow between two images
-flow = ifw.compute_optical_flow(image, image)
-
-# Draw optical flow on an image
-flow_image = ifw.draw_optical_flow(flow, image)
-
-# Highlight high intensity spots
-highlighted_image = ifw.highlight_high_intensity(image, threshold=150)
-
-# Display the results
-plt.figure(figsize=(10, 5))
-plt.subplot(1, 2, 1)
-plt.title('Original Image')
-plt.imshow(image, cmap='gray')
-plt.axis('off')
-
-plt.subplot(1, 2, 2)
-plt.title('Polar Image')
-plt.imshow(polar_image, cmap='gray')
-plt.axis('off')
-
-plt.show()
+# Detect the vesicle locations using DBSCAN and convert the image to polar coordinates
+ifw.detect_vesicles_and_convert_to_polar(file_path='path/to/your/enhanced/image/stack/from/above',
+dbscan_output_path='path/to/output/for/vesicle/detected',
+polar_output_path='path/to/output/for/polar/converted',
+eps=2,  # Adjust based on expected vesicle size
+min_samples=2,  # Adjust based on expected density of vesicle clusters
+threshold_value=128, # Adjust based on intensity threshold for vesicle detection
+line_thickness=5 # Thickness of the line used to label the detected vesicles
+)
 
 ```
 
