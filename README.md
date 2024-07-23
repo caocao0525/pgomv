@@ -63,7 +63,7 @@ ifw.process_and_save_tiff(input_file_path='path/to/input/image/stack',
 )
 
 # Detect the vesicle locations using DBSCAN and convert the image to polar coordinates
-ifw.detect_vesicles_and_convert_to_polar(file_path='path/to/your/enhanced/image/stack/from/above',
+ifw.detect_vesicles_and_convert_to_polar(file_path='path/to/your/enhanced/image/stack',
     dbscan_output_path='path/to/output/for/vesicle/detected',
     polar_output_path='path/to/output/for/polar/converted',
     eps=2,  # Adjust based on expected vesicle size
@@ -72,14 +72,14 @@ ifw.detect_vesicles_and_convert_to_polar(file_path='path/to/your/enhanced/image/
     line_thickness=5 # Thickness of the line used to label the detected vesicles
 )
 
-```
+# Display the vesicle movements between consecutive frames, with diverging colormap
+ifw.process_and_save_overlay(polar_image_path='path/to/your/polar/converted/image/stack',  
+    initial_range=(start_frame, end_frame),   #  Range of frames to process, specified as a tuple of integers
+    window_size=5,  # Size of the window (in pixels) to search for corresponding spots
+    colormap='bwr'  # Diverging colormap, see Matplotlib diverging colormap
+)
 
-## Running Tests
 
-To run tests, use pytest:
-
-```sh
-pytest tests
 ```
 
 ## Contributing
