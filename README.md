@@ -15,7 +15,8 @@ The Intraflow Image Processing Algorithm is a comprehensive workflow designed to
    * Inward movements are colored red, while outward movements are colored blue.
 
 ## Citation
-Under review: Submitted to IEEE NANOMED
+If you use this code, please cite:
+Seohyun Lee et al., "Image Processing Algorithm for Porphyromonas Gingivalis Outer Membrane Vesicle Transport in Periodental Pathogenesis", Submitted to IEEE NANOMED 2024.
 
 ## Installation
 
