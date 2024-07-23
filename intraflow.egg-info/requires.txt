@@ -1,3 +1,6 @@
 numpy
-opencv-python
+tifffile
+scikit-learn
+opencv-python-headless
 matplotlib
+tqdm

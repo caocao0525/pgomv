@@ -6,13 +6,16 @@ setup(
     packages=find_packages(),
     install_requires=[
         'numpy',
-        'opencv-python',
+        'tifffile',
+        'scikit-learn',
+        'opencv-python-headless',
         'matplotlib',
+        'tqdm'
     ],
     author='Seohyun Lee',
     author_email='seohyun.lee@iii.u-tokyo.ac.jp',
     description='A package for intracellular movement pattern of pg OMV',
-    url='https://github.com/caocao0525/pgomv',  # Replace with your GitHub URL
+    url='https://github.com/caocao0525/pgomv',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: Apache 2.0 License',

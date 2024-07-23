@@ -11,5 +11,8 @@ Classifier: Operating System :: OS Independent
 Requires-Python: >=3.6
 License-File: LICENSE
 Requires-Dist: numpy
-Requires-Dist: opencv-python
+Requires-Dist: tifffile
+Requires-Dist: scikit-learn
+Requires-Dist: opencv-python-headless
 Requires-Dist: matplotlib
+Requires-Dist: tqdm

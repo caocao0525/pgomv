@@ -5,10 +5,11 @@ channels:
 dependencies:
   - python=3.9
   - numpy
-  - opencv=4.5.5
   - matplotlib
   - scikit-learn
   - tifffile
+  - tqdm
   - pip
   - pip:
     - pytest
+    - opencv-python-headless
