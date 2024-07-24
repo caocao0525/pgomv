@@ -50,7 +50,9 @@ We suggest using `mamba` for managing your virtual environment due to its speed 
 
 ## Usage
 
-Here is an example of how to use the package:
+
+
+Here is an example of how to use the package. For sample data, you can use `sample_data/crop1_HCAEC_Pg33277_4h.tif` as a input file for the initial `process_and_save_tiff` function.
 
 ```python
 import intraflow as ifw
