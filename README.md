@@ -1,4 +1,4 @@
-# Intraflow: Intracellular Movement Analysis and Visualization for *P. gingivalis* OMVs
+# Intraflow: Intracellular Movement Analysis and Visualization for *P. gingivalis* OMVs in a host cell
 
 The Intraflow Image Processing Algorithm is a comprehensive workflow designed to analyze intracellular vesicle movements. This algorithm encompasses several key steps:
 
