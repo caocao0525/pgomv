@@ -1,10 +1,10 @@
 # Intraflow: Intracellular Movement Analysis and Visualization for *P. gingivalis* OMVs in a host cell
 
+The Intraflow Image Processing Algorithm is a comprehensive workflow designed to analyze intracellular vesicle movements. This algorithm encompasses several key steps:
+
 <p align="center">
   <img src="./algorithm_description.png" width="400">
 </p>
-
-The Intraflow Image Processing Algorithm is a comprehensive workflow designed to analyze intracellular vesicle movements. This algorithm encompasses several key steps:
 
 1. **Preprocessing using Fourier Transform and DBSCAN**
    * Enhances image quality via Fourier Transform filter and detects potential vesicle locations using DBSCAN, a machine-learning approach that effectively handles sparse data by identifying clusters of points and distinguishing noise.
