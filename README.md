@@ -21,7 +21,7 @@ The Intraflow Image Processing Algorithm is a comprehensive workflow designed to
 ## Citation
 If you use this code, please cite:
 
-Seohyun Lee, Hideaki Ota, Hideo Higuchi, Takehiro Yamaguchi, and Ryoma Nakao, "Image Processing Algorithm for *Porphyromonas gingivalis* Outer Membrane Vesicle Transport in Periodontal Pathogenesis", Submitted to IEEE NANOMED 2024.
+Seohyun Lee, Hideaki Ota, Hideo Higuchi, Takehiro Yamaguchi, and Ryoma Nakao, "Image Processing Algorithm for *Porphyromonas gingivalis* Outer Membrane Vesicle Transport in Periodontal Pathogenesis", [IEEE NANOMED 2024](https://doi.org/10.1109/NANOMED64244.2024.10946030)
 
 ## Installation
 
